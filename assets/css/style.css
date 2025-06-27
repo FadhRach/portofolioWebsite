@@ -1,0 +1,152 @@
+@import "tailwind.css";
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.card {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      color: white;
+      transition: opacity 0.3s ease;
+    }
+
+/* Animasi fade down muncul dari atas */
+    @keyframes fadeDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-down {
+      animation: fadeDown 1s ease-out;
+    }
+
+    /* Animasi gradasi text berjalan */
+    @keyframes gradientShift {
+      0%, 100% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+    }
+
+    .animated-gradient {
+      background-size: 200% 200%;
+      animation: gradientShift 4s ease infinite;
+    }
+
+    /* Scroll Animations - Fixed */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-left {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-right {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.animate-on-scroll.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-fade-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.animate-fade-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animate-fade-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.animate-fade-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.skill-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.skill-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Portfolio Carousel */
+.portfolio-carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.portfolio-slide {
+  min-width: 100%;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.5s ease;
+}
+
+.portfolio-slide.active {
+  opacity: 1;
+  transform: translateX(0);
+}
