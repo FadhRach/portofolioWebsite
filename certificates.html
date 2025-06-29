@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificates | Fadh Portfolio</title>
+  <link rel="icon" href="assets/image/icon/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-neutral-950 min-h-screen">
+  <!-- Navbar -->
+  <nav
+    class="hidden md:flex w-3xl fixed top-4 left-1/2 transform -translate-x-1/2 bg-black/50 backdrop-blur text-gray-300 px-6 py-3 rounded-3xl shadow-lg z-1000 transition-all duration-300">
+    <div class="w-full flex justify-between items-center">
+      <div class="font-semibold text-violet-400">
+        <a href="/" class="hover:text-white transition-colors duration-300">Fadh.</a>
+      </div>
+      <ul class="flex gap-8 items-center text-sm tracking-wide">
+        <li>
+          <a href="/#skill" class="hover:text-white transition-all duration-300 nav-link text-gray-300 flex items-center gap-2 animate-slide-in-left">
+            Back
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <nav
+    class="md:hidden fixed top-4 left-1/2 transform -translate-x-1/2 bg-black/50 backdrop-blur rounded-2xl px-6 py-3 shadow-lg flex justify-between w-[90%] max-w-md z-50 transition-all duration-300">
+    <div class="font-semibold text-violet-400">
+      <a href="/" class="hover:text-white transition-colors duration-300">Fadh.</a>
+    </div>
+    <a href="/#skill" class="text-gray-300 hover:text-white transition-all duration-300 flex items-center gap-2 text-sm animate-slide-in-left">
+      Back
+    </a>
+  </nav>
+
+  <main class="w-full pt-20 md:pt-24">
+
+    <section class="py-20 bg-neutral-950">
+      <div class="max-w-7xl mx-auto px-4 w-full">
+        <h1 class="text-2xl md:text-3xl font-bold text-white text-center mb-12">My Certificates</h1>
+        <div id="certificates-gallery" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        </div>
+      </div>
+    </section>
+
+    <div id="certificate-modal" class="fixed inset-0 bg-black/90 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+      <div class="relative max-w-6xl w-full h-[90vh]">
+        <button id="close-modal" class="absolute top-4 right-4 text-white hover:text-gray-300 z-10 bg-black/50 rounded-full p-2 transition-colors">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+        
+        <div id="modal-content" class="w-full h-full bg-white rounded-2xl overflow-hidden">
+          <img id="modal-image" src="" alt="" class="w-full h-full object-contain hidden">
+          <iframe id="modal-pdf" src="" class="w-full h-full hidden"></iframe>
+        </div>
+        
+        <div class="text-center mt-4">
+          <h3 id="modal-title" class="text-2xl font-bold text-white mb-2"></h3>
+          <p id="modal-org" class="text-gray-400"></p>
+        </div>
+      </div>
+    </div>
+
+    <button id="back-to-top" 
+      class="fixed bottom-8 right-8 bg-gradient-to-r from-cyan-400 to-violet-600 hover:from-violet-600 hover:to-cyan-400 text-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 opacity-0 invisible">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+      </svg>
+    </button>
+  </main>
+
+<script src="assets/js/certificates.js"></script>
+
+</body>
+
+</html>

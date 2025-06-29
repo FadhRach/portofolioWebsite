@@ -3,59 +3,64 @@
 
 
 html {
-    scroll-behavior: smooth;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .card {
-      position: sticky;
-      top: 0;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 3rem;
-      color: white;
-      transition: opacity 0.3s ease;
-    }
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: white;
+  transition: opacity 0.3s ease;
+}
 
-/* Animasi fade down muncul dari atas */
-    @keyframes fadeDown {
-      0% {
-        opacity: 0;
-        transform: translateY(-50px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+/* Animasi muncul dari atas */
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
 
-    .animate-fade-down {
-      animation: fadeDown 1s ease-out;
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-    /* Animasi gradasi text berjalan */
-    @keyframes gradientShift {
-      0%, 100% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-    }
+.animate-fade-down {
+  animation: fadeDown 1s ease-out;
+}
 
-    .animated-gradient {
-      background-size: 200% 200%;
-      animation: gradientShift 4s ease infinite;
-    }
+/* Animasi gradasi text berjalan */
+@keyframes gradientShift {
 
-    /* Scroll Animations - Fixed */
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animated-gradient {
+  background-size: 200% 200%;
+  animation: gradientShift 4s ease infinite;
+}
+
+/* scroll animasi */
 @keyframes fade-up {
   from {
     opacity: 0;
     transform: translateY(50px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -67,6 +72,7 @@ html {
     opacity: 0;
     transform: translateX(-50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -78,6 +84,7 @@ html {
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -149,4 +156,110 @@ html {
 .portfolio-slide.active {
   opacity: 1;
   transform: translateX(0);
+}
+
+/* animasi back dari kiri ke kanan */
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.8s ease-out forwards;
+}
+
+/* running text animasi messages */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 60s linear infinite;
+}
+
+.animate-scroll-left:hover {
+  animation-play-state: paused;
+}
+
+.message-item {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 3rem;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  min-width: max-content;
+}
+
+.message-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(139, 92, 246, 0.5);
+  transform: scale(1.02);
+}
+
+.message-avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.875rem;
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+}
+
+.message-content {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.message-name {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: white;
+  margin-bottom: 0.125rem;
+}
+
+.message-subject {
+  font-size: 0.75rem;
+  color: rgb(156, 163, 175);
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Responsive Code */
+@media (max-width: 768px) {
+  .animate-scroll-left {
+    animation-duration: 40s;
+  }
+
+  .message-item {
+    margin-right: 2rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .message-subject {
+    max-width: 150px;
+  }
 }
