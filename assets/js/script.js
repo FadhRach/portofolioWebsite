@@ -262,7 +262,7 @@ const portfolioData = {
       description: "Gemastik Competition Pre-Eliminary creating a model where many variables are created and using a combined pretrained model from multilingual sentiment analysis for work comments and also bilstm sbert for classification of datasets that have been processed for training",
       techStack: ["Python", "NumPy", "Pandas", "Matplotlib, PyTorch, TensorFlow, Scikit-Learn"],
       type: "Competition",
-      image: "assets/image/portfolio/datavidia.png",
+      image: "assets/image/portfolio/jobvulnerability.png",
       demoUrl: null,
       repoUrl: "https://binusianorg-my.sharepoint.com/personal/fadhlan_rachman_binus_ac_id/_layouts/15/guestaccess.aspx?share=EShgRK5SEFJMkQImZy_abHwBxML4llxvDXwypjVVUS2Adw&e=481raQ",
       hasDemo: false,
