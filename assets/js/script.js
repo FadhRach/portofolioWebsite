@@ -124,12 +124,12 @@ const portfolioData = {
       description: "A platform for finding on-call technicians that focuses on ease of navigation, a quick booking process, and a clean and responsive display. Key features: technician booking page, license approval, admin dashboard, and balance top-up system. The design prioritizes a user-friendly experience and service efficiency.",
       techStack: ["Figma", "Design System", "User Testing", "User Flow", "Prototyping", "Wireframing", "User Research"],
       type: "Task",
-      image: "assets/image/portfolio/TekGoHo.png",
+      image: "assets/image/portfolio/tekgoho.png",
       demoUrl: null,
       repoUrl: null,
       hasDemo: false,
       hasRepo: false,
-      figmaUrl: "https://figma.com/design/healthcare-dashboard"
+      figmaUrl: "https://www.figma.com/proto/BmOnHNVkDHRdFvFPzgkr3t/TekGoHo-Mobile-Prototype?page-id=0%3A1&node-id=33-2&p=f&viewport=377%2C273%2C0.08&t=68K9hYCXNeB1O5zZ-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=23%3A169"
     },
     {
       id: 7,
@@ -156,7 +156,7 @@ const portfolioData = {
       description: "BNCC LNT UI/UX Landing page design for a plant-based healthy food brand. Focus on a clean, minimalist look and appetizing product visuals. Prioritize the user journey from product description and advantages to call-to-action buttons such as “Shop Now” and “Watch Video.” Responsive and easily accessible to all audiences.",
       techStack: ["Figma", "Design System", "User Testing", "User Flow", "Prototyping", "Wireframing", "User Research"],
       type: "Task",
-      image: "assets/image/portfolio/FreshBites.png",
+      image: "assets/image/portfolio/freshbites.png",
       demoUrl: null,
       repoUrl: null,
       hasDemo: false,
@@ -255,6 +255,21 @@ const portfolioData = {
     },
     {
       id: 15,
+      name: "Classification of Job Vulnerability to AI",
+      role: "Data Scientist",
+      category: "ai",
+      year: 2025,
+      description: "Gemastik Competition Pre-Eliminary creating a model where many variables are created and using a combined pretrained model from multilingual sentiment analysis for work comments and also bilstm sbert for classification of datasets that have been processed for training",
+      techStack: ["Python", "NumPy", "Pandas", "Matplotlib, PyTorch, TensorFlow, Scikit-Learn"],
+      type: "Competition",
+      image: "assets/image/portfolio/datavidia.png",
+      demoUrl: null,
+      repoUrl: "https://binusianorg-my.sharepoint.com/personal/fadhlan_rachman_binus_ac_id/_layouts/15/guestaccess.aspx?share=EShgRK5SEFJMkQImZy_abHwBxML4llxvDXwypjVVUS2Adw&e=481raQ",
+      hasDemo: false,
+      hasRepo: true
+    },
+    {
+      id: 16,
       name: "Commodity Price Prediction",
       role: "Data Scientist",
       category: "ai",
@@ -264,12 +279,12 @@ const portfolioData = {
       type: "Competition",
       image: "assets/image/portfolio/datavidia.png",
       demoUrl: null,
-      repoUrl: "https://github.com/FadhRach/MyCompetition/tree/main/ARKAVIDIA%209%20-%20DATAVIDIA%20-%20LEGOWO",
+      repoUrl: "https://binusianorg-my.sharepoint.com/personal/fadhlan_rachman_binus_ac_id/_layouts/15/guestaccess.aspx?share=EbRu6-C3XJVNta79JZU6gp4B3EOx5r0XY3fIW5U1ilFjyg",
       hasDemo: false,
       hasRepo: true
     },
     {
-      id: 16,
+      id: 17,
       name: "Prediction Production Bag EGIER",
       role: "Data Scientist and Student",
       category: "ai",
@@ -284,7 +299,7 @@ const portfolioData = {
       hasRepo: true
     },
     {
-      id: 17,
+      id: 18,
       name: "AIDeathon MoodyVasi",
       role: "Researcher",
       category: "ai",
@@ -294,7 +309,7 @@ const portfolioData = {
       type: "Competition",
       image: "assets/image/portfolio/moodyvasi.png",
       demoUrl: null,
-      repoUrl: "https://github.com/FadhRach/SC-AOL-PrediksiGudangEgier",
+      repoUrl: "https://binusianorg-my.sharepoint.com/personal/fadhlan_rachman_binus_ac_id/_layouts/15/guestaccess.aspx?share=ESsTlLdZq_5BuQNwBoSof4wBNqY-Wpmy3_Xft62dnXd6cg",
       hasDemo: false,
       hasRepo: true
     },
